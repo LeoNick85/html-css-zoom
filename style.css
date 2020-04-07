@@ -10,7 +10,6 @@ body {
 
 header {
     height: 80px;
-    border-bottom: 1px solid white;
 }
 
 main {
@@ -86,6 +85,60 @@ button {
 }
 
 footer {
-    background-color: blue;
+    background-color: #1a252f;
     height: 80px;
+    display: flex;
+    color: white;
+}
+
+#footer-left {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#footer-center {
+    width: 250px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-right {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-right a {
+    text-decoration: none;
+    color: red;
+}
+
+.footer-element {
+    height: 100%;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#footer-center .footer-element {
+    padding: 8px 20px;
+}
+
+#footer-center .footer-element:nth-child(3) i {
+    color: #59d65e;
+}
+
+#footer-center .footer-element:nth-child(4) {
+    background-color: orange;
+}
+
+.footer-element-up {
+    height: 80%;
 }
