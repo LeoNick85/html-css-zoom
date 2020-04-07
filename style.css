@@ -4,14 +4,52 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 header {
-    background-color: red;
     height: 80px;
+    border-bottom: 1px solid white;
 }
 
 main {
     background-color: lightgreen;
     height: calc( 100vh - 160px)
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    color: white;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+#header-left {
+    width:50%;
+    height: 80px;
+    padding: 20px 10px;
+    float: left;
+}
+
+.fa-lock {
+    color: #59d65e;
+}
+
+#header-right {
+    width:50%;
+    height: 80px;
+    padding: 20px 10px;
+    text-align: right;
+    float: left;
+    color: white;
+    text-align: right;
+}
+
+#header-right a {
+    padding: 5 9px;
+    height: 32px;
 }
 
 footer {
