@@ -14,7 +14,6 @@ header {
 }
 
 main {
-    background-color: lightgreen;
     height: calc( 100vh - 160px)
 }
 
@@ -50,6 +49,40 @@ button {
 #header-right a {
     padding: 5 9px;
     height: 32px;
+}
+
+#webcam-wrapper {
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam {
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+}
+
+.overlay-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    color: white;
+    padding: 2px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.fa-microphone-slash {
+    color: red;
 }
 
 footer {
