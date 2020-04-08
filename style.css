@@ -89,6 +89,7 @@ footer {
     height: 80px;
     display: flex;
     color: white;
+    justify-content: space-between;
 }
 
 #footer-left {
@@ -141,4 +142,10 @@ footer {
 
 .footer-element-up {
     height: 80%;
+}
+
+@media all and (max-width: 950px) {
+    #footer-center {
+        display: none;
+    }
 }
